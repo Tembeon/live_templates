@@ -25,3 +25,16 @@ factory $NAME$.fromJson(Map<String, dynamic> json) => _$$$NAME$FromJson(json);
 ```dart
 part '$FILENAME$.g.dart';
 ```
+
+### freezedState - Creates states for BLoC with freezed
+```dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '$fileNameWithoutExtension$.freezed.dart';
+
+@freezed
+class $NAME$State with _$$$NAME$State {
+  const factory $NAME$State.initial() = InitialState;
+  
+}
+```
