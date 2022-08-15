@@ -34,6 +34,7 @@ part '$fileNameWithoutExtension$.freezed.dart';
 
 @freezed
 class $NAME$State with _$$$NAME$State {
+  const $NAME$State._();
   const factory $NAME$State.initial() = InitialState;
   
 }
