@@ -1,6 +1,7 @@
 ## Templates for bloc package (with freezed)
 
-### blocWithFreezed - creates bloc with states and events
+### blocWithFreezed
+Creates bloc with states and events.
 ```dart
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -51,5 +52,44 @@ class $NAME$Bloc extends Bloc<$NAME$Event, $NAME$State> {
   ) async {
     // ...
   }
+}
+```
+
+## blocEventOrState
+Adds new event or state depend on class. Required additional setting:
+
+<details>
+  <summary>Open image</summary>
+
+![img.png](assets/blocEventOrState.png)
+
+</details>
+
+
+```dart
+const factory $dartClassName$.$eventOrStateName$() = _$capitalizeMethodName$$dartClassName$;
+```
+
+### freezedState
+Creates state for BLoC with freezed. Required additional setting:
+
+<details>
+  <summary>Open image</summary>
+
+![img.png](assets/freezed.png)
+
+</details>
+
+
+```dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '$fileNameWithoutExtension$.freezed.dart';
+
+@freezed
+class $NAME$State with _$$$NAME$State {
+  const $NAME$State._();
+  const factory $NAME$State.initial() = InitialState;
+  
 }
 ```
