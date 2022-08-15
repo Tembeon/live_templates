@@ -1,7 +1,15 @@
 ## Templates for bloc package (with freezed)
 
 ### blocWithFreezed
-Creates bloc with states and events.
+Creates bloc with states and events. Required additional setting:
+
+<details>
+  <summary>Open image</summary>
+
+![img.png](assets/freezed.png)
+
+</details>
+
 ```dart
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
